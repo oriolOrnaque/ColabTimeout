@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Colab Timeout",
+	"version": "1.0",
+
+	"description": "Hacks around Colab timeouts",
+
+	"content_scripts": [
+		{
+			"matches": ["*://colab.research.google.com/*"],
+			"js": ["my_script.js"],
+			"run_at": "document_idle"
+		}
+	]
+}
